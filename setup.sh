@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# Module 11 CI/CD Lab - Quick Setup Script
+echo "🚀 Setting up Module 11 CI/CD Lab..."
+
+# Check if Git is installed
+if ! command -v git &> /dev/null; then
+    echo "❌ Git is not installed. Please install Git first."
+    exit 1
+fi
+
+# Check if AWS CLI is installed
+if ! command -v aws &> /dev/null; then
+    echo "❌ AWS CLI is not installed. Please install AWS CLI first."
+    exit 1
+fi
+
+# Initialize Git repository
+echo "📁 Initializing Git repository..."
+git init
+
+# Add all files
+echo "📝 Adding files to Git..."
+git add .
+
+# Create initial commit
+echo "💾 Creating initial commit..."
+git commit -m "Initial commit: Add CloudFormation template and CI/CD workflows"
+
+echo "✅ Setup complete!"
+echo ""
+echo "Next steps:"
+echo "1. Create GitHub repository: module11-cicd-lab"
+echo "2. Add remote: git remote add origin https://github.com/YOUR-USERNAME/module11-cicd-lab.git"
+echo "3. Push to GitHub: git push -u origin main"
+echo "4. Add AWS credentials to GitHub Secrets"
+echo ""
+echo "📖 See Module11-CICD-Git-Lab-Setup.md for detailed instructions"
