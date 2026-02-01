@@ -39,4 +39,4 @@ git push origin main
 The CI/CD pipeline will:
 1. Validate CloudFormation template syntax
 2. Run linting checks
-3. Deploy to AWS automatically on main branch
+3. Deploy to AWS automatically on main branch# Trigger workflow after adding secrets
